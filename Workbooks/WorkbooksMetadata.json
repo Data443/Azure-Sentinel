@@ -9772,8 +9772,8 @@
 	},
 	{
 		"workbookKey": "CyrenThreatIntelligenceDashboard",
-		"logoFileName": "",
-		"description": "Cyren Threat Intelligence Dashboard provides real-time visibility into Cyren IP Reputation and Malware URLs feeds, helping security teams monitor threat intelligence data ingestion and identify high-risk indicators.",
+		"logoFileName": "Azure_Sentinel.svg",
+		"description": "This workbook provides visualization and monitoring for Cyren threat intelligence indicators including IP reputation and malware URLs. Monitor data pipeline health, analyze threat categories, and track indicator ingestion.",
 		"dataTypesDependencies": [
 			"Cyren_Indicators_CL"
 		],
@@ -9785,6 +9785,23 @@
 		"title": "Cyren Threat Intelligence Dashboard",
 		"templateRelativePath": "CyrenThreatIntelligenceDashboard.json",
 		"subtitle": "",
-		"provider": "Cyren"
+		"provider": "Data443 Risk Mitigation, Inc."
+	},
+	{
+		"workbookKey": "TacitRedSecOpsWorkbook",
+		"logoFileName": "Azure_Sentinel.svg",
+		"description": "This workbook provides SecOps visibility into TacitRed compromised credential findings, including breach trends, domain analysis, and credential exposure metrics.",
+		"dataTypesDependencies": [
+			"TacitRed_Findings_CL"
+		],
+		"dataConnectorsDependencies": [
+			"TacitRedThreatIntel"
+		],
+		"previewImagesFileNames": [],
+		"version": "1.0.0",
+		"title": "TacitRed SecOps Workbook",
+		"templateRelativePath": "TacitRedSecOpsWorkbook.json",
+		"subtitle": "",
+		"provider": "TacitRed"
 	}
 ]
