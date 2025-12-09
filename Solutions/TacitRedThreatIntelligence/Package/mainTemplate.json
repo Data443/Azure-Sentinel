@@ -697,10 +697,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
+                    "connectorId": "TacitRedThreatIntel",
                     "dataTypes": [
                       "TacitRed_Findings_CL"
-                    ],
-                    "connectorId": "TacitRedThreatIntel"
+                    ]
                   }
                 ],
                 "tactics": [
@@ -716,12 +716,12 @@
                   {
                     "fieldMappings": [
                       {
-                        "columnName": "Username",
-                        "identifier": "Name"
+                        "identifier": "Name",
+                        "columnName": "Username"
                       },
                       {
-                        "columnName": "Email",
-                        "identifier": "UPNSuffix"
+                        "identifier": "UPNSuffix",
+                        "columnName": "Email"
                       }
                     ],
                     "entityType": "Account"
@@ -729,8 +729,8 @@
                   {
                     "fieldMappings": [
                       {
-                        "columnName": "Domain",
-                        "identifier": "DomainName"
+                        "identifier": "DomainName",
+                        "columnName": "Domain"
                       }
                     ],
                     "entityType": "DNS"
@@ -743,12 +743,12 @@
                   "createIncident": true,
                   "groupingConfiguration": {
                     "matchingMethod": "Selected",
-                    "reopenClosedIncident": false,
                     "enabled": true,
                     "groupByEntities": [
                       "Account"
                     ],
-                    "lookbackDuration": "5h"
+                    "lookbackDuration": "5h",
+                    "reopenClosedIncident": false
                   }
                 }
               }
@@ -832,10 +832,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
+                    "connectorId": "TacitRedThreatIntel",
                     "dataTypes": [
                       "TacitRed_Findings_CL"
-                    ],
-                    "connectorId": "TacitRedThreatIntel"
+                    ]
                   }
                 ],
                 "tactics": [
@@ -849,8 +849,8 @@
                   {
                     "fieldMappings": [
                       {
-                        "columnName": "Email",
-                        "identifier": "Name"
+                        "identifier": "Name",
+                        "columnName": "Email"
                       }
                     ],
                     "entityType": "Account"
@@ -858,8 +858,8 @@
                   {
                     "fieldMappings": [
                       {
-                        "columnName": "Domain",
-                        "identifier": "DomainName"
+                        "identifier": "DomainName",
+                        "columnName": "Domain"
                       }
                     ],
                     "entityType": "DNS"
@@ -872,12 +872,12 @@
                   "createIncident": true,
                   "groupingConfiguration": {
                     "matchingMethod": "Selected",
-                    "reopenClosedIncident": false,
                     "enabled": true,
                     "groupByEntities": [
                       "Account"
                     ],
-                    "lookbackDuration": "5h"
+                    "lookbackDuration": "5h",
+                    "reopenClosedIncident": false
                   }
                 }
               }
