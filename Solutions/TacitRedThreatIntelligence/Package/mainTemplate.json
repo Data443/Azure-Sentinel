@@ -697,10 +697,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
-                    "connectorId": "TacitRedThreatIntel",
                     "dataTypes": [
                       "TacitRed_Findings_CL"
-                    ]
+                    ],
+                    "connectorId": "TacitRedThreatIntel"
                   }
                 ],
                 "tactics": [
@@ -716,12 +716,12 @@
                   {
                     "fieldMappings": [
                       {
-                        "identifier": "Name",
-                        "columnName": "Username"
+                        "columnName": "Username",
+                        "identifier": "Name"
                       },
                       {
-                        "identifier": "UPNSuffix",
-                        "columnName": "Email"
+                        "columnName": "Email",
+                        "identifier": "UPNSuffix"
                       }
                     ],
                     "entityType": "Account"
@@ -729,8 +729,8 @@
                   {
                     "fieldMappings": [
                       {
-                        "identifier": "DomainName",
-                        "columnName": "Domain"
+                        "columnName": "Domain",
+                        "identifier": "DomainName"
                       }
                     ],
                     "entityType": "DNS"
@@ -740,16 +740,16 @@
                   "aggregationKind": "AlertPerResult"
                 },
                 "incidentConfiguration": {
-                  "createIncident": true,
                   "groupingConfiguration": {
-                    "matchingMethod": "Selected",
+                    "reopenClosedIncident": false,
                     "enabled": true,
+                    "lookbackDuration": "5h",
                     "groupByEntities": [
                       "Account"
                     ],
-                    "lookbackDuration": "5h",
-                    "reopenClosedIncident": false
-                  }
+                    "matchingMethod": "Selected"
+                  },
+                  "createIncident": true
                 }
               }
             },
@@ -832,10 +832,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
-                    "connectorId": "TacitRedThreatIntel",
                     "dataTypes": [
                       "TacitRed_Findings_CL"
-                    ]
+                    ],
+                    "connectorId": "TacitRedThreatIntel"
                   }
                 ],
                 "tactics": [
@@ -849,8 +849,8 @@
                   {
                     "fieldMappings": [
                       {
-                        "identifier": "Name",
-                        "columnName": "Email"
+                        "columnName": "Email",
+                        "identifier": "Name"
                       }
                     ],
                     "entityType": "Account"
@@ -858,8 +858,8 @@
                   {
                     "fieldMappings": [
                       {
-                        "identifier": "DomainName",
-                        "columnName": "Domain"
+                        "columnName": "Domain",
+                        "identifier": "DomainName"
                       }
                     ],
                     "entityType": "DNS"
@@ -869,16 +869,16 @@
                   "aggregationKind": "AlertPerResult"
                 },
                 "incidentConfiguration": {
-                  "createIncident": true,
                   "groupingConfiguration": {
-                    "matchingMethod": "Selected",
+                    "reopenClosedIncident": false,
                     "enabled": true,
+                    "lookbackDuration": "5h",
                     "groupByEntities": [
                       "Account"
                     ],
-                    "lookbackDuration": "5h",
-                    "reopenClosedIncident": false
-                  }
+                    "matchingMethod": "Selected"
+                  },
+                  "createIncident": true
                 }
               }
             },
