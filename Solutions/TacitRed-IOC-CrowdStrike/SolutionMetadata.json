@@ -1,16 +1,16 @@
 {
-  "publisherId": "tacitred",
+  "publisherId": "data443",
   "offerId": "azure-sentinel-solution-tacitred-crowdstrike-ioc-automation",
   "firstPublishDate": "2025-11-25",
-  "providers": ["TacitRed"],
+  "providers": ["Data443 Risk Mitigation, Inc."],
   "categories": {
     "domains": ["Security - Threat Intelligence"],
     "verticals": []
   },
   "support": {
-    "name": "TacitRed",
-    "email": "support@tacitred.com",
+    "name": "Data443 Risk Mitigation, Inc.",
+    "email": "support@data443.com",
     "tier": "Partner",
-    "link": "https://tacitred.com"
+    "link": "https://www.data443.com"
   }
 }
