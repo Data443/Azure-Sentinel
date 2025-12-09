@@ -679,7 +679,7 @@
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
               "name": "[variables('analyticRuleObject1')._analyticRulecontentId1]",
-              "apiVersion": "2023-02-01-preview",
+              "apiVersion": "2025-09-01",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -814,7 +814,7 @@
             {
               "type": "Microsoft.SecurityInsights/AlertRuleTemplates",
               "name": "[variables('analyticRuleObject2')._analyticRulecontentId2]",
-              "apiVersion": "2023-02-01-preview",
+              "apiVersion": "2025-09-01",
               "kind": "Scheduled",
               "location": "[parameters('workspace-location')]",
               "properties": {
@@ -945,7 +945,7 @@
               "name": "[variables('workbookContentId1')]",
               "location": "[parameters('workspace-location')]",
               "kind": "shared",
-              "apiVersion": "2021-08-01",
+              "apiVersion": "2023-06-01",
               "metadata": {
                 "description": "This workbook provides SecOps visibility into TacitRed compromised credential findings, including breach trends, domain analysis, and credential exposure metrics."
               },
