@@ -13,7 +13,7 @@
   "Workbooks": [
     "Workbooks/TacitRedSecOpsWorkbook.json"
   ],
-  "WorkbookDescription": ["This workbook provides SecOps visibility into TacitRed compromised credential findings, including breach trends, domain analysis, and credential exposure metrics."],
+  "WorkbookDescription": "This workbook provides SecOps visibility into TacitRed compromised credential findings, including breach trends, domain analysis, and credential exposure metrics.",
   "Metadata": "SolutionMetadata.json",
   "BasePath": "C:\\GitHub\\Azure-Sentinel\\Solutions\\TacitRedThreatIntelligence",
   "Version": "3.0.0",
