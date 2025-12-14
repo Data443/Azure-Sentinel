@@ -3137,7 +3137,7 @@ function PrepareSolutionMetadata($solutionMetadataRawContent, $contentResourceDe
             [Parameter(Mandatory=$True)]
             [System.Boolean]$isPipelineRun
         )
-        if ($isPipelineRun -eq $false)
+        if ($isPipelineRun -eq $false -and $env:DATA443_SKIP_INTERNAL_ARM_TTK -ne '1')
         {
             #downloading and running arm-ttk on generated solution
             $armTtkFolder = "$PSScriptRoot/../arm-ttk"
