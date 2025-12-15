@@ -1,16 +1,16 @@
 {
-  "publisherId": "tacitred",
+  "publisherId": "data443",
   "offerId": "tacitred-compromised-credentials-solution",
   "firstPublishDate": "2025-01-01",
-  "providers": ["TacitRed"],
+  "providers": ["Data443 Risk Mitigation, Inc."],
   "categories": {
     "domains": ["Identity", "Security - Threat Protection"],
     "verticals": []
   },
   "support": {
-    "name": "TacitRed",
-    "email": "support@tacitred.com",
+    "name": "Data443 Risk Mitigation, Inc.",
+    "email": "support@data443.com",
     "tier": "Partner",
-    "link": "https://www.tacitred.com/support"
+    "link": "https://www.data443.com"
   }
 }

@@ -2,7 +2,7 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "metadata": {
-    "author": "TacitRed - support@tacitred.com",
+    "author": "TacitRed - support@data443.com",
     "comments": "Solution template for TacitRedThreatIntelligence"
   },
   "parameters": {
@@ -52,7 +52,7 @@
     }
   },
   "variables": {
-    "email": "support@tacitred.com",
+    "email": "support@data443.com",
     "_email": "[variables('email')]",
     "_solutionName": "TacitRedThreatIntelligence",
     "_solutionVersion": "3.0.0",
@@ -194,14 +194,14 @@
                   "kind": "Solution"
                 },
                 "author": {
-                  "name": "TacitRed",
+                  "name": "Data443 Risk Mitigation, Inc.",
                   "email": "[variables('_email')]"
                 },
                 "support": {
-                  "name": "TacitRed",
-                  "email": "support@tacitred.com",
+                  "name": "Data443 Risk Mitigation, Inc.",
+                  "email": "support@data443.com",
                   "tier": "Partner",
-                  "link": "https://www.tacitred.com/support"
+                  "link": "https://www.data443.com"
                 },
                 "dependencies": {
                   "criteria": [
@@ -502,14 +502,14 @@
           "kind": "Solution"
         },
         "author": {
-          "name": "TacitRed",
+          "name": "Data443 Risk Mitigation, Inc.",
           "email": "[variables('_email')]"
         },
         "support": {
-          "name": "TacitRed",
-          "email": "support@tacitred.com",
+          "name": "Data443 Risk Mitigation, Inc.",
+          "email": "support@data443.com",
           "tier": "Partner",
-          "link": "https://www.tacitred.com/support"
+          "link": "https://www.data443.com"
         },
         "dependencies": {
           "criteria": [
@@ -587,14 +587,14 @@
                   "kind": "Solution"
                 },
                 "author": {
-                  "name": "TacitRed",
+                  "name": "Data443 Risk Mitigation, Inc.",
                   "email": "[variables('_email')]"
                 },
                 "support": {
-                  "name": "TacitRed",
-                  "email": "support@tacitred.com",
+                  "name": "Data443 Risk Mitigation, Inc.",
+                  "email": "support@data443.com",
                   "tier": "Partner",
-                  "link": "https://www.tacitred.com/support"
+                  "link": "https://www.data443.com"
                 }
               }
             },
@@ -769,14 +769,14 @@
                   "sourceId": "[variables('_solutionId')]"
                 },
                 "author": {
-                  "name": "TacitRed",
+                  "name": "Data443 Risk Mitigation, Inc.",
                   "email": "[variables('_email')]"
                 },
                 "support": {
-                  "name": "TacitRed",
-                  "email": "support@tacitred.com",
+                  "name": "Data443 Risk Mitigation, Inc.",
+                  "email": "support@data443.com",
                   "tier": "Partner",
-                  "link": "https://www.tacitred.com/support"
+                  "link": "https://www.data443.com"
                 }
               }
             }
@@ -898,14 +898,14 @@
                   "sourceId": "[variables('_solutionId')]"
                 },
                 "author": {
-                  "name": "TacitRed",
+                  "name": "Data443 Risk Mitigation, Inc.",
                   "email": "[variables('_email')]"
                 },
                 "support": {
-                  "name": "TacitRed",
-                  "email": "support@tacitred.com",
+                  "name": "Data443 Risk Mitigation, Inc.",
+                  "email": "support@data443.com",
                   "tier": "Partner",
-                  "link": "https://www.tacitred.com/support"
+                  "link": "https://www.data443.com"
                 }
               }
             }
@@ -973,14 +973,14 @@
                   "sourceId": "[variables('_solutionId')]"
                 },
                 "author": {
-                  "name": "TacitRed",
+                  "name": "Data443 Risk Mitigation, Inc.",
                   "email": "[variables('_email')]"
                 },
                 "support": {
-                  "name": "TacitRed",
-                  "email": "support@tacitred.com",
+                  "name": "Data443 Risk Mitigation, Inc.",
+                  "email": "support@data443.com",
                   "tier": "Partner",
-                  "link": "https://www.tacitred.com/support"
+                  "link": "https://www.data443.com"
                 },
                 "dependencies": {
                   "operator": "AND",
@@ -1022,7 +1022,7 @@
         "kind": "Solution",
         "contentSchemaVersion": "3.0.0",
         "displayName": "TacitRedThreatIntelligence",
-        "publisherDisplayName": "TacitRed",
+        "publisherDisplayName": "Data443 Risk Mitigation, Inc.",
         "descriptionHtml": "<p><strong>Note:</strong> Please refer to the following before installing the solution:</p>\n<p>• Review the solution <a href=\"https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/TacitRedThreatIntelligence/ReleaseNotes.md\">Release Notes</a></p>\n<p>• There may be <a href=\"https://aka.ms/sentinelsolutionsknownissues\">known issues</a> pertaining to this Solution, please refer to them before installing.</p>\n<p>The <a href=\"https://www.tacitred.com/\">TacitRed Compromised Credentials</a> solution integrates TacitRed's compromised credential and identity threat intelligence into Microsoft Sentinel using the Codeless Connector Framework (CCF). The solution deploys a REST API poller connector, a custom log table (TacitRed_Findings_CL), analytics rule, and visualization workbook to help security teams detect and investigate credential compromise.</p>\n<p><strong>Data Connectors:</strong> 1, <strong>Workbooks:</strong> 1, <strong>Analytic Rules:</strong> 2</p>\n<p><a href=\"https://aka.ms/azuresentinel\">Learn more about Microsoft Sentinel</a> | <a href=\"https://aka.ms/azuresentinelsolutionsdoc\">Learn more about Solutions</a></p>\n",
         "contentKind": "Solution",
         "contentProductId": "[variables('_solutioncontentProductId')]",
@@ -1036,14 +1036,14 @@
           "sourceId": "[variables('_solutionId')]"
         },
         "author": {
-          "name": "TacitRed",
+          "name": "Data443 Risk Mitigation, Inc.",
           "email": "[variables('_email')]"
         },
         "support": {
-          "name": "TacitRed",
-          "email": "support@tacitred.com",
+          "name": "Data443 Risk Mitigation, Inc.",
+          "email": "support@data443.com",
           "tier": "Partner",
-          "link": "https://www.tacitred.com/support"
+          "link": "https://www.data443.com"
         },
         "dependencies": {
           "operator": "AND",
@@ -1072,7 +1072,7 @@
         },
         "firstPublishDate": "2025-01-01",
         "providers": [
-          "TacitRed"
+          "Data443 Risk Mitigation, Inc."
         ],
         "categories": {
           "domains": [

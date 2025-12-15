@@ -41,9 +41,9 @@ The `TacitRed_Findings_CL` table includes:
 
 ## Support
 
-- **Provider**: TacitRed
-- **Email**: support@tacitred.com
-- **Website**: https://www.tacitred.com
+- **Provider**: Data443 Risk Mitigation, Inc.
+- **Email**: support@data443.com
+- **Website**: https://www.data443.com
 
 ## Learn More
 
