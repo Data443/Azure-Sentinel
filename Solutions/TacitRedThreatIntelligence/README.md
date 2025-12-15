@@ -47,5 +47,5 @@ The `TacitRed_Findings_CL` table includes:
 
 ## Learn More
 
-- [Microsoft Sentinel Documentation](https://docs.microsoft.com/azure/sentinel/)
+- [Microsoft Sentinel Documentation](https://learn.microsoft.com/azure/sentinel/)
 - [TacitRed Platform](https://www.tacitred.com/)

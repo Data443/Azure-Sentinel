@@ -16,7 +16,6 @@
       "auth": {
         "type": "APIKey",
         "ApiKeyName": "Authorization",
-        "ApiKeyIdentifier": "Bearer",
         "ApiKey": "{{tacitRedApiKey}}"
       },
       "request": {
