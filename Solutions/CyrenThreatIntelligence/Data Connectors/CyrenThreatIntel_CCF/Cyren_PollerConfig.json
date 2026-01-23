@@ -24,10 +24,12 @@
         "httpMethod": "GET",
         "queryParameters": {
           "count": 100,
-          "offset": 0,
           "format": "jsonl"
         },
-        "queryWindowInMin": 240,
+        "queryWindowInMin": 360,
+        "queryTimeFormat": "yyyy-MM-ddTHH:mm:ss.fffZ",
+        "startTimeAttributeName": "startTime",
+        "endTimeAttributeName": "endTime",
         "rateLimitQps": 1,
         "retryCount": 3,
         "timeoutInSeconds": 60,
@@ -37,9 +39,7 @@
         }
       },
       "paging": {
-        "pagingType": "Offset",
-        "offsetParameterName": "offset",
-        "pageSize": 100
+        "pagingType": "None"
       },
       "response": {
         "eventsJsonPaths": ["$"],
@@ -72,10 +72,12 @@
         "httpMethod": "GET",
         "queryParameters": {
           "count": 100,
-          "offset": 0,
           "format": "jsonl"
         },
-        "queryWindowInMin": 240,
+        "queryWindowInMin": 360,
+        "queryTimeFormat": "yyyy-MM-ddTHH:mm:ss.fffZ",
+        "startTimeAttributeName": "startTime",
+        "endTimeAttributeName": "endTime",
         "rateLimitQps": 1,
         "retryCount": 3,
         "timeoutInSeconds": 60,
@@ -85,9 +87,7 @@
         }
       },
       "paging": {
-        "pagingType": "Offset",
-        "offsetParameterName": "offset",
-        "pageSize": 100
+        "pagingType": "None"
       },
       "response": {
         "eventsJsonPaths": ["$"],

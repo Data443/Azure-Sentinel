@@ -629,16 +629,6 @@
               "defaultValue": "[parameters('workspace')]",
               "type": "securestring"
             },
-            "cyrenIpReputationToken": {
-              "defaultValue": "-NA-",
-              "type": "securestring",
-              "minLength": 4
-            },
-            "cyrenMalwareUrlToken": {
-              "defaultValue": "-NA-",
-              "type": "securestring",
-              "minLength": 4
-            },
             "connectorDefinitionName": {
               "defaultValue": "Cyren Threat Intelligence",
               "type": "securestring",
@@ -654,6 +644,16 @@
                 "dataCollectionRuleImmutableId": "data collection rule immutableId"
               },
               "type": "object"
+            },
+            "cyrenIpReputationToken": {
+              "defaultValue": "cyrenIpReputationToken",
+              "type": "securestring",
+              "minLength": 1
+            },
+            "cyrenMalwareUrlToken": {
+              "defaultValue": "cyrenMalwareUrlToken",
+              "type": "securestring",
+              "minLength": 1
             }
           },
           "variables": {
@@ -711,10 +711,12 @@
                   "httpMethod": "GET",
                   "queryParameters": {
                     "count": 100,
-                    "offset": 0,
                     "format": "jsonl"
                   },
-                  "queryWindowInMin": 240,
+                  "queryWindowInMin": 360,
+                  "queryTimeFormat": "yyyy-MM-ddTHH:mm:ss.fffZ",
+                  "startTimeAttributeName": "startTime",
+                  "endTimeAttributeName": "endTime",
                   "rateLimitQps": 1,
                   "retryCount": 3,
                   "timeoutInSeconds": 60,
@@ -724,9 +726,7 @@
                   }
                 },
                 "paging": {
-                  "pagingType": "Offset",
-                  "offsetParameterName": "offset",
-                  "pageSize": 100
+                  "pagingType": "None"
                 },
                 "response": {
                   "eventsJsonPaths": [
@@ -761,10 +761,12 @@
                   "httpMethod": "GET",
                   "queryParameters": {
                     "count": 100,
-                    "offset": 0,
                     "format": "jsonl"
                   },
-                  "queryWindowInMin": 240,
+                  "queryWindowInMin": 360,
+                  "queryTimeFormat": "yyyy-MM-ddTHH:mm:ss.fffZ",
+                  "startTimeAttributeName": "startTime",
+                  "endTimeAttributeName": "endTime",
                   "rateLimitQps": 1,
                   "retryCount": 3,
                   "timeoutInSeconds": 60,
@@ -774,9 +776,7 @@
                   }
                 },
                 "paging": {
-                  "pagingType": "Offset",
-                  "offsetParameterName": "offset",
-                  "pageSize": 100
+                  "pagingType": "None"
                 },
                 "response": {
                   "eventsJsonPaths": [
@@ -850,33 +850,33 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "IP",
                     "fieldMappings": [
                       {
                         "identifier": "Address",
                         "columnName": "IPAddress"
                       }
-                    ],
-                    "entityType": "IP"
+                    ]
                   }
                 ],
                 "eventGroupingSettings": {
                   "aggregationKind": "AlertPerResult"
                 },
                 "customDetails": {
+                  "Source": "Source",
                   "DetectionCount": "DetectionCount",
                   "Categories": "ThreatCategories",
-                  "RiskScore": "MaxRisk",
-                  "Source": "Source"
+                  "RiskScore": "MaxRisk"
                 },
                 "incidentConfiguration": {
                   "groupingConfiguration": {
-                    "enabled": true,
                     "matchingMethod": "Selected",
-                    "lookbackDuration": "1d",
+                    "enabled": true,
                     "groupByEntities": [
                       "IP"
                     ],
-                    "reopenClosedIncident": false
+                    "reopenClosedIncident": false,
+                    "lookbackDuration": "1d"
                   },
                   "createIncident": true
                 }
@@ -977,34 +977,34 @@
                 ],
                 "entityMappings": [
                   {
+                    "entityType": "URL",
                     "fieldMappings": [
                       {
                         "identifier": "Url",
                         "columnName": "MaliciousURL"
                       }
-                    ],
-                    "entityType": "URL"
+                    ]
                   }
                 ],
                 "eventGroupingSettings": {
                   "aggregationKind": "AlertPerResult"
                 },
                 "customDetails": {
-                  "DetectionCount": "DetectionCount",
-                  "Categories": "ThreatCategories",
-                  "RiskScore": "MaxRisk",
                   "Source": "Source",
-                  "Domain": "Domain"
+                  "DetectionCount": "DetectionCount",
+                  "Domain": "Domain",
+                  "Categories": "ThreatCategories",
+                  "RiskScore": "MaxRisk"
                 },
                 "incidentConfiguration": {
                   "groupingConfiguration": {
-                    "enabled": true,
                     "matchingMethod": "Selected",
-                    "lookbackDuration": "1d",
+                    "enabled": true,
                     "groupByEntities": [
                       "URL"
                     ],
-                    "reopenClosedIncident": false
+                    "reopenClosedIncident": false,
+                    "lookbackDuration": "1d"
                   },
                   "createIncident": true
                 }
@@ -1105,16 +1105,16 @@
                   "aggregationKind": "SingleAlert"
                 },
                 "customDetails": {
-                  "LatestEventTime": "LatestEventTime",
                   "TotalEventsLast24h": "TotalEventsLast24h",
+                  "LatestEventTime": "LatestEventTime",
                   "HoursSinceLastEvent": "HoursSinceLastEvent"
                 },
                 "incidentConfiguration": {
                   "groupingConfiguration": {
-                    "enabled": false,
                     "matchingMethod": "Selected",
-                    "lookbackDuration": "1d",
-                    "reopenClosedIncident": false
+                    "enabled": false,
+                    "reopenClosedIncident": false,
+                    "lookbackDuration": "1d"
                   },
                   "createIncident": true
                 }
