@@ -36,11 +36,9 @@
     "_solutionVersion": "3.0.2",
     "solutionId": "data443riskmitigationinc1761580347231.azure-sentinel-solution-tacitred-s1-ioc-auto",
     "_solutionId": "[variables('solutionId')]",
-    "Playbooks": "Playbooks",
-    "_Playbooks": "[variables('Playbooks')]",
     "blanks": "[replace('b', 'b', '')]",
     "playbookVersion1": "1.0",
-    "playbookContentId1": "Playbooks",
+    "playbookContentId1": "TacitRedToSentinelOne",
     "_playbookContentId1": "[variables('playbookContentId1')]",
     "playbookId1": "[resourceId('Microsoft.Logic/workflows', variables('playbookContentId1'))]",
     "playbookTemplateSpecName1": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-pl-',uniquestring(variables('_playbookContentId1'))))]",
@@ -67,10 +65,6 @@
               "type": "string",
               "defaultValue": "pb-tacitred-to-sentinelone"
             },
-            "location": {
-              "type": "string",
-              "defaultValue": "[concat('[resourceGroup().locatio', 'n]')]"
-            },
             "TacitRed_ApiKey": {
               "type": "securestring",
               "defaultValue": "",
@@ -87,9 +81,9 @@
             },
             "SentinelOne_BaseUrl": {
               "type": "string",
-              "defaultValue": "https://usea1-001.sentinelone.net",
+              "defaultValue": "",
               "metadata": {
-                "description": "SentinelOne Console URL (e.g. https://usea1-001.sentinelone.net)"
+                "description": "SentinelOne Console URL (e.g. https://usea1-021.sentinelone.net) — find this in your browser address bar when logged into SentinelOne. Must include https:// with no trailing slash."
               }
             }
           },
@@ -103,7 +97,7 @@
               "type": "Microsoft.Logic/workflows",
               "apiVersion": "2019-05-01",
               "name": "[[parameters('PlaybookName')]",
-              "location": "[[parameters('location')]",
+              "location": "[[variables('workspace-location-inline')]",
               "properties": {
                 "state": "Enabled",
                 "parameters": {
@@ -131,7 +125,7 @@
                     },
                     "SentinelOne_BaseUrl": {
                       "type": "string",
-                      "defaultValue": "https://usea1-001.sentinelone.net"
+                      "defaultValue": ""
                     },
                     "SentinelOne_ApiToken": {
                       "type": "string",
@@ -200,6 +194,8 @@
                 }
               },
               "tags": {
+                "hidden-SentinelTemplateName": "TacitRedToSentinelOne",
+                "hidden-SentinelTemplateVersion": "1.0",
                 "hidden-SentinelWorkspaceId": "[[variables('workspaceResourceId')]"
               }
             },
@@ -208,7 +204,7 @@
               "apiVersion": "2022-01-01-preview",
               "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat('Playbook-', last(split(variables('playbookId1'),'/'))))]",
               "properties": {
-                "parentId": "[variables('playbookId1')]",
+                "parentId": "[[variables('playbookId1')]]",
                 "contentId": "[variables('_playbookContentId1')]",
                 "kind": "Playbook",
                 "version": "[variables('playbookVersion1')]",
@@ -275,7 +271,7 @@
       "apiVersion": "2023-04-01-preview",
       "location": "[parameters('workspace-location')]",
       "properties": {
-        "version": "3.0.2",
+        "version": "3.0.1",
         "kind": "Solution",
         "contentSchemaVersion": "3.0.0",
         "displayName": "TacitRed-SentinelOne",
@@ -307,7 +303,7 @@
           "criteria": [
             {
               "kind": "Playbook",
-              "contentId": "[variables('_Playbooks')]",
+              "contentId": "[variables('_playbookContentId1')]",
               "version": "[variables('playbookVersion1')]"
             }
           ]
