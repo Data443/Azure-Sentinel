@@ -365,36 +365,7 @@
                 }
               }
             }
-          ],
-          "metadata": {
-            "title": "Vaikora AI Agent Behavioral Signals",
-            "description": "Vaikora AI Agent Behavioral Signals data connector for Microsoft Sentinel using the Codeless Connector Framework (CCF). Polls the Vaikora API on a schedule and ingests AI agent action events into a custom Log Analytics table.",
-            "tags": [
-              "Vaikora",
-              "AI Security",
-              "CCF",
-              "Data Connector"
-            ],
-            "support": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com",
-              "tier": "Partner",
-              "link": "https://data443.com/support"
-            },
-            "author": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com"
-            },
-            "releaseNotes": [
-              {
-                "version": "3.0.0",
-                "title": "Vaikora-Sentinel",
-                "notes": [
-                  "Initial release of the Vaikora AI Agent Behavioral Signals CCF solution: REST API poller data connector, three analytic rules, and visualization workbook. Includes per-component releaseNotes metadata blocks required by Partner Center policy 300.4.1.1."
-                ]
-              }
-            ]
-          }
+          ]
         },
         "packageKind": "Solution",
         "packageVersion": "[variables('_solutionVersion')]",
@@ -677,35 +648,7 @@
                 }
               }
             }
-          ],
-          "metadata": {
-            "title": "Vaikora AI Agent Behavioral Signals",
-            "description": "DCR-based REST API poller deployment for the Vaikora AI Agent Behavioral Signals connector.",
-            "tags": [
-              "Vaikora",
-              "AI Security",
-              "Data Collection Rule"
-            ],
-            "support": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com",
-              "tier": "Partner",
-              "link": "https://data443.com/support"
-            },
-            "author": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com"
-            },
-            "releaseNotes": [
-              {
-                "version": "3.0.0",
-                "title": "Vaikora-Sentinel",
-                "notes": [
-                  "Initial release of the Vaikora AI Agent Behavioral Signals CCF solution: REST API poller data connector, three analytic rules, and visualization workbook. Includes per-component releaseNotes metadata blocks required by Partner Center policy 300.4.1.1."
-                ]
-              }
-            ]
-          }
+          ]
         },
         "packageKind": "Solution",
         "packageVersion": "[variables('_solutionVersion')]",
@@ -831,35 +774,7 @@
                 }
               }
             }
-          ],
-          "metadata": {
-            "title": "Vaikora - High severity AI agent action detected",
-            "description": "Detects high or critical severity actions performed by AI agents that trigger anomaly or policy decisions in the Vaikora signals stream.",
-            "tags": [
-              "Vaikora",
-              "AI Security",
-              "Threat Detection"
-            ],
-            "support": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com",
-              "tier": "Partner",
-              "link": "https://data443.com/support"
-            },
-            "author": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com"
-            },
-            "releaseNotes": [
-              {
-                "version": "3.0.0",
-                "title": "Vaikora-Sentinel",
-                "notes": [
-                  "Initial release of the Vaikora AI Agent Behavioral Signals CCF solution: REST API poller data connector, three analytic rules, and visualization workbook. Includes per-component releaseNotes metadata blocks required by Partner Center policy 300.4.1.1."
-                ]
-              }
-            ]
-          }
+          ]
         },
         "packageKind": "Solution",
         "packageVersion": "[variables('_solutionVersion')]",
@@ -987,35 +902,7 @@
                 }
               }
             }
-          ],
-          "metadata": {
-            "title": "Vaikora - Behavioral anomaly detected",
-            "description": "Detects AI agent actions flagged as behavioral anomalies by the Vaikora detection engine.",
-            "tags": [
-              "Vaikora",
-              "AI Security",
-              "Anomaly Detection"
-            ],
-            "support": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com",
-              "tier": "Partner",
-              "link": "https://data443.com/support"
-            },
-            "author": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com"
-            },
-            "releaseNotes": [
-              {
-                "version": "3.0.0",
-                "title": "Vaikora-Sentinel",
-                "notes": [
-                  "Initial release of the Vaikora AI Agent Behavioral Signals CCF solution: REST API poller data connector, three analytic rules, and visualization workbook. Includes per-component releaseNotes metadata blocks required by Partner Center policy 300.4.1.1."
-                ]
-              }
-            ]
-          }
+          ]
         },
         "packageKind": "Solution",
         "packageVersion": "[variables('_solutionVersion')]",
@@ -1142,35 +1029,7 @@
                 }
               }
             }
-          ],
-          "metadata": {
-            "title": "Vaikora - Agent policy violation",
-            "description": "Detects AI agent actions that result in a policy block decision from Vaikora.",
-            "tags": [
-              "Vaikora",
-              "AI Security",
-              "Policy Violation"
-            ],
-            "support": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com",
-              "tier": "Partner",
-              "link": "https://data443.com/support"
-            },
-            "author": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com"
-            },
-            "releaseNotes": [
-              {
-                "version": "3.0.0",
-                "title": "Vaikora-Sentinel",
-                "notes": [
-                  "Initial release of the Vaikora AI Agent Behavioral Signals CCF solution: REST API poller data connector, three analytic rules, and visualization workbook. Includes per-component releaseNotes metadata blocks required by Partner Center policy 300.4.1.1."
-                ]
-              }
-            ]
-          }
+          ]
         },
         "packageKind": "Solution",
         "packageVersion": "[variables('_solutionVersion')]",
@@ -1259,35 +1118,7 @@
               },
               "description": "This workbook provides visualization and monitoring for Vaikora AI agent behavioral signals including action timelines, severity breakdowns, anomaly detection, and policy violations."
             }
-          ],
-          "metadata": {
-            "title": "Vaikora AI Agent Signals Dashboard",
-            "description": "Visualization of Vaikora AI agent behavioral signals including signal overview, action timelines, severity breakdowns, anomaly detection, and policy violations for SecOps teams.",
-            "tags": [
-              "Vaikora",
-              "AI Security",
-              "Workbook"
-            ],
-            "support": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com",
-              "tier": "Partner",
-              "link": "https://data443.com/support"
-            },
-            "author": {
-              "name": "Data443 Risk Mitigation, Inc.",
-              "email": "support@data443.com"
-            },
-            "releaseNotes": [
-              {
-                "version": "3.0.0",
-                "title": "Vaikora-Sentinel",
-                "notes": [
-                  "Initial release of the Vaikora AI Agent Behavioral Signals CCF solution: REST API poller data connector, three analytic rules, and visualization workbook. Includes per-component releaseNotes metadata blocks required by Partner Center policy 300.4.1.1."
-                ]
-              }
-            ]
-          }
+          ]
         },
         "packageKind": "Solution",
         "packageVersion": "[variables('_solutionVersion')]",
@@ -1312,7 +1143,7 @@
         "contentSchemaVersion": "3.0.0",
         "displayName": "Vaikora-Sentinel",
         "publisherDisplayName": "Data443 Risk Mitigation, Inc.",
-        "descriptionHtml": "<p><strong>Note:</strong> Please refer to the following before installing the solution:</p>\n<p>\u2022 Review the solution <a href=\"https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Vaikora-Sentinel/ReleaseNotes.md\">Release Notes</a></p>\n<p>\u2022 There may be <a href=\"https://aka.ms/sentinelsolutionsknownissues\">known issues</a> pertaining to this Solution, please refer to them before installing.</p>\n<p>The <a href=\"https://vaikora.com\">Vaikora AI Agent Behavioral Signals</a> solution integrates Vaikora AI agent behavioral data into Microsoft Sentinel using the Codeless Connector Framework (CCF). The solution deploys a REST API poller connector, a custom log table (Vaikora_AgentSignals_CL), analytics rules, and visualization workbook to help security teams monitor AI agent activity, detect behavioral anomalies, and investigate policy violations.</p>\n<p><strong>Data Connectors:</strong> 1, <strong>Workbooks:</strong> 1, <strong>Analytic Rules:</strong> 3</p>\n<p><a href=\"https://aka.ms/azuresentinel\">Learn more about Microsoft Sentinel</a> | <a href=\"https://aka.ms/azuresentinelsolutionsdoc\">Learn more about Solutions</a></p>\n",
+        "descriptionHtml": "<p><strong>Note:</strong> Please refer to the following before installing the solution:</p>\n<p>• Review the solution <a href=\"https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Vaikora-Sentinel/ReleaseNotes.md\">Release Notes</a></p>\n<p>• There may be <a href=\"https://aka.ms/sentinelsolutionsknownissues\">known issues</a> pertaining to this Solution, please refer to them before installing.</p>\n<p>The <a href=\"https://vaikora.com\">Vaikora AI Agent Behavioral Signals</a> solution integrates Vaikora AI agent behavioral data into Microsoft Sentinel using the Codeless Connector Framework (CCF). The solution deploys a REST API poller connector, a custom log table (Vaikora_AgentSignals_CL), analytics rules, and visualization workbook to help security teams monitor AI agent activity, detect behavioral anomalies, and investigate policy violations.</p>\n<p><strong>Data Connectors:</strong> 1, <strong>Workbooks:</strong> 1, <strong>Analytic Rules:</strong> 3</p>\n<p><a href=\"https://aka.ms/azuresentinel\">Learn more about Microsoft Sentinel</a> | <a href=\"https://aka.ms/azuresentinelsolutionsdoc\">Learn more about Solutions</a></p>\n",
         "contentKind": "Solution",
         "contentProductId": "[variables('_solutioncontentProductId')]",
         "id": "[variables('_solutioncontentProductId')]",
@@ -1365,7 +1196,7 @@
           ]
         },
         "firstPublishDate": "2026-04-03",
-        "lastPublishDate": "2026-04-29",
+        "lastPublishDate": "2026-04-03",
         "providers": [
           "Data443 Risk Mitigation, Inc."
         ],
